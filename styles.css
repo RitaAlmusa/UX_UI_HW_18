@@ -68,7 +68,7 @@ position: relative;
    
  .SKILLS { 
     display: grid; padding: 10px ;
-    margin: 40px;
+    margin: 40px ;
      margin-left: 50px;
     box-sizing: border-box;
     float: left;
@@ -101,7 +101,7 @@ align-items: flex-start }
     
     display: grid; padding-left: 20px; 
     padding-left: 10px;
-    margin: 40px;
+    margin: 40px ;
     margin-right: 60px;
     box-sizing: border-box;
     float: right;
@@ -114,7 +114,7 @@ align-items: flex-start }
     height: px; 
     font-size: 16px;
     box-shadow: 0px 10px 10px 10px whitesmoke;0px 10px 10px 10px rgba(0,0,0.65);
-    margin-top: -500px;
+    margin-top: 0px;
     h1 {
         font-size: 10px; 
         align-items: flex-start;
@@ -127,7 +127,7 @@ align-items: flex-start }
            font-size: 10px;
        }
        p {
-           width:600px; 
+           width:400px; 
            margin line-break: 200px; 
            padding: 10px ; 
            font-size: 10px; 
@@ -135,7 +135,7 @@ align-items: flex-start }
            font-family: rubik;
        align-items: flex-start }; 
        .experience-list     
-       {width:600px; 
+       {width:400px; 
         margin line-break: 200px; 
         padding: 10px ; 
         font-size: 18px; 
@@ -173,14 +173,11 @@ margin-top:;}
             align-items: center;
         padding-right: px;} 
         .list-inline .Skills {color: teal;}
-@media only screen and (max-width: 600) {
-            body {max-width: 100%; max-width: 600px;}
-
-        flex-direction: column; 
-        .EXPERIENCE {width: 100%; float: left; margin line-break: 100px}
-        .SKILLS {width: 100%; float: left; margin line-break: 100px}
-        p {max width:200px; }
-        .experience-list { max width:200px; margin line-break: 100px}
-    
+        @media only screen and (max-width: 600) {
+        flex-direction: column;
         }
-         
+.content { display: column; width: 100%}
+h1 {text-size: 30px}
+        p { display: inline-block; text-size:40px margin:10px; width: auto }
+        .button {padding-bottom: 100px;
+            margin-left: 40px;
